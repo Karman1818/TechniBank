@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>TechniBank</title>
+	<meta name="author" content="Marceli Karman">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style1.css">
+    <script src="java/bell.js"></script>
+    <link rel="stylesheet" href="css/bell.css">
+    <link rel="stylesheet" href="css/mail.css" />
+    <script src="java/mail.js"></script>
+	<div></div>
+	
+</head>
+<body>
+    <header>
+        <img id="logo" src="css/img/techni.png" alt="logo">
+        <div id="name"><a class="link1" href="index.html">TechniBank</a></div>
+        <input id="search" type="Search" placeholder="    Wyszukaj" >
+        <div id="doc"><a class="link1" href="logowanie.html">Log out &rarr;</a></div>
+        <button id="bell" onclick="openPopupBell()">🔔</button>
+        <button id="mail" onclick="openPopupMesage()">✉️</button>
+        <button id="pfp1" onclick="window.location.href='profile.html'">
+            <img id="pfp" src="css/img/men.png" alt="profile picture">
+        </button>
+    </header>
+    <div id="background">
+        <img src="css/img/tlo.png" alt="tlo">
+        <div class="overlay-text">
+            <h1>Witamy w TechniBanku</h1>
+            <p>W najbardziej profesjonalnym banku na całej planecie</p>
+            <a href="/css/img/dymu.mp4" download="dymu.mp4" onclick="openPopupBroun()">
+                <button class="fajny_obrazek"><div class="text_in_braun">Naciśnij!!!</div></button>
+            </a>
+            
+        </div>
+
+    </div>
+    
+    <div>
+    <div class="dash">
+        <h2>Opcje</h2>
+        <p>Wybierz co chcesz zrobić już teraz!</p>
+
+    </div>
+    <div class="part1">
+    <div class="line"></div>
+
+    <div class="pictures">
+    <button class="button-pictures" onclick="window.location.href='biling.html'">    
+        <img id="pic1" src="css/img/pic1.jpg" alt="zdjecie 1">
+        <div class="text-pictures">Zarządzanie Metodami Płatności oraz Ich Historia</div>
+    </button>
+    <button class="button-pictures" onclick="window.location.href='Platnosci.html'">    
+        <img id="pic2" src="css/img/pic2.jpg" alt="zdjecie 2">
+        <div class="text-pictures">Wykonaj przelew</div>
+    </button>  
+    <button class="button-pictures" onclick="window.location.href='inwestuj.html'">
+        <img id="pic3" src="css/img/inwestuj.jpg" alt="zdjecie 3">
+        <div class="text-pictures">Inwestuj razem z nami</div>
+    </button>    
+
+    </div>
+    </div>
+
+    <div class="dash">
+        <h2>Karty Płatnicze</h2>
+        <p>Podgląd na dostepne karty płatnicze oraz kredytowe w naszym banku!</p>
+
+    </div>
+    
+        <div class="line"></div>
+    
+        <div class="pictures">
+            <img id="pic5" src="css/img/pic4.jpg" alt="zdjecie 1">
+            <img id="pic6" src="css/img/pic5.jpg" alt="zdjecie 2">
+            <img id="pic7" src="css/img/pic6.jpg" alt="zdjecie 3">
+            <img id="pic8" src="css/img/pic7.jpg" alt="zdjecie 4">
+        </div> 
+    </div>
+    
+        
+    
+        <div class="pictures">
+            <img id="pic5" src="css/img/pic8.jpg" alt="zdjecie 1">
+            <img id="pic6" src="css/img/pic9.jpg" alt="zdjecie 2">
+            <img id="pic7" src="css/img/pic10.jpg" alt="zdjecie 3">
+            <img id="pic8" src="css/img/pic11.jpg" alt="zdjecie 4">
+        </div> 
+    </div>
+    
+        
+    
+        <div class="pictures">
+            <img id="pic5" src="css/img/pic12.jpg" alt="zdjecie 1">
+            <img id="pic6" src="css/img/pic13.jpg" alt="zdjecie 2">
+            <img id="pic7" src="css/img/pic14.jpg" alt="zdjecie 3">
+            <img id="pic8" src="css/img/pic15.jpg" alt="zdjecie 4">
+        </div> 
+    </div>
+    
+        
+    
+        <div class="pictures">
+            <img id="pic5" src="css/img/pic16.jpg" alt="zdjecie 1">
+            <img id="pic6" src="css/img/pic17.jpg" alt="zdjecie 2">
+            <img id="pic7" src="css/img/pic18.jpg" alt="zdjecie 3">
+            <img id="pic8" src="css/img/pic19.jpg" alt="zdjecie 4">
+        </div> 
+    
+    
+        
+    
+      
+    
+    <div class="dash">
+        <h2>Żółw Rzeczny</h2>
+        <p>tudududu jest niebezpieczny tududu!</p>
+    </div>
+    
+    <div class="line"></div>
+    
+
+    <div class="overlayMasge " id="overlayMasge ">
+        <div class="popupMasge ">
+            <img src="css/img/x-mark.png" alt="Close" class="close-btnMasge " onclick="closePopupMesage()">
+            <h2>Napisz do nas!!!</h2>
+            <div class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">
+                <div class="text_nad_input">Imie i Nazwisko</div>
+                <div class="text_nad_input" id="Emial_yes">Email</div>
+            </div>
+            <div class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">
+                <input type="text" class="Imie_nazw" placeholder="Wpisz imie i nazwisko">
+                <input type="emil" class="email" placeholder="Wpisz email">
+            </div>
+            <label for="message" class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">Wiadomość:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      
+            <div class="wyślij" id="srodek"><div class="text_ponownie"onclick="closePopupMesage()">Wyślij</div></div>
+        </div>
+      </div>
+    <footer>
+        <div class="pictures">
+            <div id="foot1">Copyright © Marceli Karman and Adam Pukaluk Website</div> 
+            <div id="foot2"> <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Privacy Policy</a>   · <a href="https://en.wikipedia.org/wiki/Terms_of_service" target="_blank">Terms & Conditions</a> </div>
+        </div>
+    </footer>   
+    
+    
+    <div class="overlayBell" id="overlayBell">
+        <div class="popupBell">
+            <img src="css/img/x-mark.png" alt="Close" class="close-btnBell" onclick="closePopupBell()">
+            <div class="Bell_Nagl"><div class="powiad">Powiadomienia</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💻Nowe logowanie Win11 Gabriela narutowicza 55B 13:56 12.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">🏧💸Wypłata gotówki 100zł Lublin 3 maja godzina 16:47 10.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💵➡️🏦Wpłata gotówki 50zł bankomat krakowskie przedmieście 18:20 8.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💵Przelew środków 50 zł do użytkownika Maksiu 12:20 7.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💵Wpływ środków od użytkownika Kuba M 19:45 5.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">🪙₿ Zakupiono 0.004 Bitcoin o wartości 662.97zł 21:23 4.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">📱Przelew środków 50 zł na telefon  932 *** 393 9.23 3.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💳Płatność kartą 4.99zł żabka Gabriela Narutowicza 12:33 1.12.2023 </div></div>
+            <div class="Powiadomienia" id="zaokr"><div class="text_powiadomienia">⚠️Niedostępność systemu bankowego niedziela 21.11.2023 od 2:00 do 4:00</div></div>
+        </div>
+    </div>
+
+    <div class="overlayBroun" id="overlayBroun">
+        <div class="popupBroun">
+            <img src="css/img/x-mark.png" alt="Close" class="close-btnBroun" onclick="closePopupBroun()">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@kr3jonk/video/7311819871929617697" data-video-id="7311819871929617697" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@kr3jonk" href="https://www.tiktok.com/@kr3jonk?refer=embed">@kr3jonk</a> <a title="dc" target="_blank" href="https://www.tiktok.com/tag/dc?refer=embed">#dc</a> <a title="sejm" target="_blank" href="https://www.tiktok.com/tag/sejm?refer=embed">#sejm</a> <a title="braun" target="_blank" href="https://www.tiktok.com/tag/braun?refer=embed">#braun</a> <a target="_blank" title="♬ WIĘCEJ DYMU - 2115 &#38; Bedoes 2115 &#38; White 2115" href="https://www.tiktok.com/music/WIĘCEJ-DYMU-7124655595231119362?refer=embed">♬ WIĘCEJ DYMU - 2115 &#38; Bedoes 2115 &#38; White 2115</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+      </div>
+    <script>
+        function openPopupBroun() {
+    var overlay = document.getElementById('overlayBroun');
+    overlay.style.display = 'flex'; 
+}
+
+    function closePopupBroun() {
+    var overlay = document.getElementById('overlayBroun');
+    overlay.style.display = 'none';
+}
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technibank | Rejstracja</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="content" autor="Adam Pukaluk">
+</head>
+<body>
+
+  <div class="cos">
+   
+    <p class="text_wejscowy">Register Now</p>
+  </div>
+    
+  <div class="container">
+    <a href="/index.html" class="button-link"><button type="button" class="button-box2">Sign in</button></a>
+    <div class="rounded-box2">
+        <div class="box_media">
+          <div style="font-size: 20px;" class="icons">Sign in with</div>
+          <div class="icons">
+            <div><img src="css/img/icons8-google-96.png" class="box-icon"></div>
+            <div><img src="css/img/icons8-facebook-96.png" class="box-icon"></div>
+            <div><img src="css/img/git_hub.png" class="box-icon"></div>
+            <div><img src="css/img/icons8-twitter-circled-96.png" class="box-icon"></div>
+          </div>
+        </div>
+        <div>
+            <label class="log">First name and Last name:</label><br>
+            <input
+              class="input_f"
+              type="text"
+              placeholder="Wpisz imie i nazwisko"
+              name="username"
+            />
+        </div>
+
+        <div>
+          <label class="log"  >Email:</label>
+          <input
+            class="input"
+            type="text"
+            placeholder="Wpisz email"
+            name="email"
+            id="emailInput"
+          />
+        </div>
+        <div>
+          <label class="haslo">Hasło:</label>
+          <input
+            class="input"
+            type="password"
+            placeholder="Wpisz hasło"
+            name="password"
+          />
+         <div>
+          <div>
+              <label class="haslo">User name:</label>
+              <input
+                class="input"
+                type="text"
+                placeholder="Wpisz nazwe użytkownika"
+                name="User"
+              />
+          <div id="log"> 
+      <a href="logowanie.html"><div class="text_have_ac">Zaloguj Się</div></a>
+  </div>
+
+  
+
+  <script>
+    const emailInput = document.getElementById('emailInput');
+
+    emailInput.addEventListener('input', function () {
+        const enteredValue = emailInput.value.trim();
+        const isAllowedDomain = enteredValue.endsWith('@gmail.com') ||
+                                enteredValue.endsWith('@wp.pl') ||
+                                enteredValue.endsWith('@outlook.com') ||
+                                enteredValue.endsWith('@onet.com');
+
+        if (isAllowedDomain) {
+            emailInput.style.border = '1px solid black';
+        } else {
+            emailInput.style.border = '1px solid red';
+        }
+    });
+
+
+    
+</script>
+
+
+</body>
+</html>

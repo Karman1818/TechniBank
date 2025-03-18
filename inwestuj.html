@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>TechniBank</title>
+    <meta name="content" autor="Adam Pukaluk"> 
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/inwestuj.css">
+    <script src="java/bell.js"></script>
+    <link rel="stylesheet" href="css/bell.css">
+    <link rel="stylesheet" href="css/mail.css" />
+    <script src="java/mail.js"></script>
+	
+	<div></div>
+	
+</head>
+<body>
+    <header>
+        <img id="logo" src="css/img/techni.png" alt="logo">
+        <div id="name"><a class="link1" href="index.html">TechniBank</a></div>
+        <input id="search" type="Search" placeholder="    Wyszukaj" >
+        <div id="doc"><a class="link1" href="index.html">Strona Główna &rarr;</a></div>
+        <button id="bell" onclick="openPopupBell()">🔔</button>
+        <button id="mail" onclick="openPopupMesage()">✉️</button>
+        <button id="pfp1" onclick="window.location.href='profile.html'">
+            <img id="pfp" src="css/img/men.png" alt="profile picture">
+        </button>
+    </header>
+    <div id="background">
+        <img src="css/img/tlo.png" alt="tlo">
+        <div class="overlay-text">
+            <h1>Witamy w strefie inwestownia</h1>
+            <a href="/css/img/hołownia_gigahad.mp4" download=".hołownia_gigahad.mpr">
+                <button class="fajny_obrazek" onclick="openPopupHolownia()"><div class="text_in_braun">Polecam klikać!!!</div></button>
+            </a>
+        </div>
+    </div>
+    <div class="dash">
+        <h2>Opcje</h2>
+        <p>Wybierz co chcesz zrobić już teraz!</p>
+
+    </div>
+    <div class="part1">
+    <div class="line"></div>
+
+    <div class="pictures">
+    <button class="button-pictures" onclick="window.location.href='kryptowaluty.html'">    
+        <img id="pic1" src="css/img/krypto.jpg" alt="zdjecie 1">
+        <div class="text-pictures">Inwestuj w kryptowaluty</div>
+    </button>
+    <button class="button-pictures" onclick="openPopupAnother()">    
+        <img id="pic2" src="css/img/obligacje.jpg" alt="zdjecie 2">
+        <div class="text-pictures">Inwestuj a w obligacje</div>
+    </button>  
+    <button class="button-pictures" onclick="openPopupAnother()">
+        <img id="pic3" src="css/img/Akcje.jpg" alt="zdjecie 3">
+        <div class="text-pictures">Inwestuj w akcje firm</div>
+    </button>    
+
+    </div>
+    </div>
+    <div class="overlayMasge " id="overlayMasge ">
+        <div class="popupMasge ">
+            <img src="css/img/x-mark.png" alt="Close" class="close-btnMasge " onclick="closePopupMesage()">
+            <h2>Napisz do nas!!!</h2>
+            <div class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">
+                <div class="text_nad_input">Imie i Nazwisko</div>
+                <div class="text_nad_input" id="Emial_yes">Email</div>
+            </div>
+            <div class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">
+                <input type="text" class="Imie_nazw" placeholder="Wpisz imie i nazwisko">
+                <input type="emil" class="email" placeholder="Wpisz email">
+            </div>
+            <label for="message" class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">Wiadomość:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      
+            <div class="wyślij" id="srodek"><div class="text_ponownie"onclick="closePopupMesage()">Wyślij</div></div>
+        </div>
+      </div>
+  
+
+
+
+    <div class="overlayAnother" id="overlayAnother">
+        <div class="popupAnother">
+            <img src="/css/img/x-mark.png" alt="Close" class="close-btnAnother" onclick="closePopupAnother()">
+            <h2>Strona w budowie przepraszamy</h2>
+        </div>
+      </div>
+      
+
+
+
+
+    <footer>
+        <div class="pictures">
+            <div id="foot1">Copyright © Marceli Karman and Adam Pukaluk Website</div> 
+            <div id="foot2"> <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Privacy Policy</a>   · <a href="https://en.wikipedia.org/wiki/Terms_of_service" target="_blank">Terms & Conditions</a> </div>
+        </div>
+    </footer>
+    <div class="overlayBell" id="overlayBell">
+        <div class="popupBell">
+            <img src="css/img/x-mark.png" alt="Close" class="close-btnBell" onclick="closePopupBell()">
+            <div class="Bell_Nagl"><div class="powiad">Powiadomienia</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💻Nowe logowanie Win11 Gabriela narutowicza 55B 13:56 12.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">🏧💸Wypłata gotówki 100zł Lublin 3 maja godzina 16:47 10.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💵➡️🏦Wpłata gotówki 50zł bankomat krakowskie przedmieście 18:20 8.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💵Przelew środków 50 zł do użytkownika Maksiu 12:20 7.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💵Wpłym środków od użytkownika Kuba M 19:45 5.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">🪙₿ Zakupiono 0.004 Bitcoin o wartości 662.97zł 21:23 4.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">📱Przelew środków 50 zł na telefon  932 *** 393 9.23 3.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💳Płatność kartą 4.99zł żabka Gabriela Narutowicza 12:33 1.12.2023 </div></div>
+            <div class="Powiadomienia" id="zaokr"><div class="text_powiadomienia">⚠️Niedostępność systemu bankowego niedziela 21.11.2023 od 2:00 do 4:00</div></div>
+        </div>
+    </div>
+
+    <div class="overlayHolownia" id="overlayHolownia">
+        <div class="popupHolownia">
+            <img src="css/img/x-mark.png" alt="Close" class="close-btnHolownia" onclick="closePopupHolownia()">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@phasboyo/video/7311441280016338209" data-video-id="7311441280016338209" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@phasboyo" href="https://www.tiktok.com/@phasboyo?refer=embed">@phasboyo</a> Hołownia sigma na prezydenta <a title="hołownia" target="_blank" href="https://www.tiktok.com/tag/ho%C5%82ownia?refer=embed">#hołownia</a> <a title="szymonhołownia" target="_blank" href="https://www.tiktok.com/tag/szymonho%C5%82ownia?refer=embed">#szymonhołownia</a> <a title="sejm" target="_blank" href="https://www.tiktok.com/tag/sejm?refer=embed">#sejm</a> <a title="sejmrp" target="_blank" href="https://www.tiktok.com/tag/sejmrp?refer=embed">#sejmrp</a> <a title="pis" target="_blank" href="https://www.tiktok.com/tag/pis?refer=embed">#pis</a> <a title="prawoisprawiedliwosc" target="_blank" href="https://www.tiktok.com/tag/prawoisprawiedliwosc?refer=embed">#prawoisprawiedliwosc</a> <a title="sigma" target="_blank" href="https://www.tiktok.com/tag/sigma?refer=embed">#sigma</a> <a title="gigachad" target="_blank" href="https://www.tiktok.com/tag/gigachad?refer=embed">#gigachad</a> <a target="_blank" title="♬ dźwięk oryginalny - Phasboyo" href="https://www.tiktok.com/music/dźwięk-oryginalny-7311441296097643296?refer=embed">♬ dźwięk oryginalny - Phasboyo</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+      </div>
+    <script>
+
+
+function openPopupAnother() {
+    var overlay = document.getElementById('overlayAnother');
+    overlay.style.display = 'flex';
+}
+
+function closePopupAnother() {
+    var overlay = document.getElementById('overlayAnother');
+    overlay.style.display = 'none';
+}
+function openPopupHolownia() {
+    var overlay = document.getElementById('overlayHolownia');
+    overlay.style.display = 'flex';
+}
+function closePopupHolownia() {
+    var overlay = document.getElementById('overlayHolownia');
+    overlay.style.display = 'none';
+}
+
+
+    </script> 
+</body>
+</html>
+

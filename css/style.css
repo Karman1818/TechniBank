@@ -1,0 +1,258 @@
+/*Adam Pukaluk oraz lekkie poprawki od Marceliego👍*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Comic+Neue:wght@400;700&family=Noto+Sans+Linear+A&family=Roboto:ital@0;1&display=swap');
+
+
+body {
+  background: url('img/tlo.png');
+  background-size: cover;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+}
+
+
+
+
+a{
+  text-decoration:none;
+}
+#rejstr{
+  text-align: center;
+  font-size: 18px;
+}
+#log{
+text-align: center;
+  font-size: 18px;
+  margin-right: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+.button-box2 {
+  text-decoration: none;
+  width: 450px;
+  height: 100px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #b21a33, #2a1c95);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  border: 10px;
+  border-color: red;
+  
+  
+}
+
+.button-box2:hover {
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.rounded-box {
+  width: 450px;
+  height: 400px;
+  background-color: #000000;
+  border-radius: 60px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.rounded-box2 {
+  width: 450px;
+  height: 550px;
+  background-color: #000000;
+  border-radius: 60px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.box_media{
+  width: 450px;
+  height: 120px;
+  border-bottom: 1px solid grey;
+}
+
+
+.log,
+.haslo {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 20px;
+
+}
+.input_f{
+  width: 80%;
+  padding: 10px;
+  margin-left: 20px;  
+  margin-top: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.input{
+  width: 80%;
+  padding: 10px;
+  margin-left: 20px;  
+  margin-top: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.cos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.user {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+
+}
+
+.user2 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  margin-bottom: 10px;
+}
+
+
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.male{
+  width: 50px;
+}
+.box-icon{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border-bottom: 1px solid grey;
+  transition: all 0.3s ease-in;
+}
+.box-icon:hover{
+  scale: 1.3;
+}
+.wybor{
+  font-size: 18px;
+  margin: 20px;
+  justify-content: auto;
+}
+.checkbox{
+  border-radius: 10px;
+}
+.text_have_ac{
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 24px;
+  margin-top: 10px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.text_nad_input{
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #666;
+
+}
+.Imie_nazw{
+
+  width:45%;
+  height: 30px;
+  border: 1px solid #afaeb8;
+  border-radius: 10px;
+}
+.email{
+  width:45%;
+  height: 30px;
+  border: 1px solid #afaeb8;
+  border-radius: 10px;
+
+}
+.nie_chce_mi_się_wymyśliać_nazwy_do_tego{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mesege{
+  margin-top: 20px;
+  height: 80%;
+  border-radius: 10px;
+}
+.wyślij{
+  width: 200px;
+  height: 70px;
+  border-radius: 30px;
+  background-color: blue;
+  margin-top: 10px;
+  margin-left: 25%;
+  color: white;
+}
+.text_ponownie{
+  font-size: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: ease-in 0.3ms;
+}
+.text_ponownie:active{
+  scale: 1.1;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment History</title>
+    <meta name="content" autor="Adam Pukaluk">
+    <link rel="stylesheet" href="css/biling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="java/bell.js"></script>
+    <link rel="stylesheet" href="css/bell.css">
+    <link rel="stylesheet" href="css/mail.css" />
+    <script src="java/mail.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Comic+Neue:wght@400;700&family=Noto+Sans+Linear+A&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="css/img/techni.png" alt="logo">
+        <div id="name"><a class="link1" href="index.html">TechniBank</a></div>
+        <input id="search" type="Search" placeholder="    Wyszukaj" >
+        <div id="doc"><a class="link1" href="index.html">Strona Główna &rarr;</a></div>
+        <button id="bell" onclick="openPopupBell()">🔔</button>
+        <button id="mail" onclick="openPopupMesage()">✉️</button>
+        <button id="pfp1" onclick="window.location.href='profile.html'">
+            <img id="pfp" src="css/img/men.png" alt="profile picture">
+        </button>
+    </header>
+    <div id="background">
+        <img src="css/img/tlo.png" alt="tlo">
+        <div class="overlay-text">
+            <h1>Witamy w strefie histori płątności</h1>
+            <a href="/css/img/nice.mp4" download="nice.mp4">
+                <button class="fajny_obrazek"  onclick="openPopupNice()"><div class="text_in_braun">Mordo kliknij</div></button>
+            </a>
+
+        </div>
+    </div>
+    <div class="dash">
+        <h2>Opcje</h2>
+        <p>ZObacz historie swoich płątnosci</p>
+
+    </div>
+    <div class="part1">
+    <div class="line"></div>
+    <div class="container">
+        <div class="box" id="div_1">
+            <div class="text_do_div_szary">Miesięczne koszty
+            <div class="text_do_div_black">$500.00</div>
+            <div></div><br>
+            <div class="text_do_div_blue">
+                Zobacz koszty roczne &#x27A1;</div>
+            </div>
+        </div>  
+
+        <div class="box" id="div_2">
+            <div class="text_do_div_szary">Najbliższe płatności
+            <div class="text_do_div_black">15 october</div>
+            <div></div><br>
+            <div class="text_do_div_blue">Zobacz historie płatności &#x27A1;</div>
+            </div>
+        </div>
+
+        <div class="box" id="div_3">
+            <div class="text_do_div_szary">Otatnia Płatność
+            <div class="text_do_div_black">10 june 10:52</div>
+            <div></div><br>
+            <div class="text_do_div_blue">
+                Zobacz szczegóły &#x27A1;</div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="box2">
+                <button class="button_blue">Dodaj Metode Płatności</button>
+                <div class="in_box">
+                    <div class="blue"><b>Metody Płatności
+                    </b></div>
+                </div>
+                <div class="in_box2">
+                    <img src="css/img/karta_visa.png" class="img_karty">
+                    <div class="type_text">Type: Visa</div>
+                </div>
+                <div class="in_box2">
+                    <img src="css/img/card_peo.png" class="img2_karty">
+                    <div class="type_text">Type: MasterCard</div>
+                </div>
+                <div class="in_box3">
+                    <img src="css/img/debit-card.png" class="img_karty">
+                    <div class="type_text">Type: Debit Card</div>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="in_box">
+                    <div class="blue"><b>Historia Płatności</b></div>
+                </div>
+                <div class="in_inbox4" id="ID-DATE">
+                    <div class="color"><b>Transaction ID</b></div>
+                    <div class="color"><b> Date</b></div>
+                    <div class="color"><b> Kwota</b></div>
+                    <div class="color"><b> Status</b></div>
+                </div>
+                <div class="in_inbox4" id="dwa">
+                    <div class="color">#3456</div>
+                    <div class="color">12/09/2023</div>
+                    <div class="color">$40,00</div>
+                    <div class="color"> <div class="red">Failed</div></div>
+                </div>
+                <div class="in_inbox4" id="trzy">
+                    <div class="color">#3256</div>
+                    <div class="color">06/15/2021</div>
+                    <div class="color">$34.98</div>
+                    <div class="color"><div class="red">Failed</div></div>
+                </div>
+                <div class="in_inbox4" id="czt">
+                    <div class="color">#2976</div>
+                    <div class="color">23/08/2021</div>
+                    <div class="color">$67.20</div>
+                    <div class="color"><div class="green">Accept</div></div>
+                </div>
+                <div class="in_inbox5" id="pnt">
+                    <div class="color">#8764</div>
+                    <div class="color">21/02/2019</div>
+                    <div class="color">$35.50</div>
+                    <div class="color"><div class="green">Accept</div></div>
+
+                </div>
+  
+                
+            </div>
+        </div>  
+
+    </div>
+    <div class="overlayMasge " id="overlayMasge ">
+        <div class="popupMasge ">
+            <img src="css/img/x-mark.png" alt="Close" class="close-btnMasge " onclick="closePopupMesage()">
+            <h2>Napisz do nas!!!</h2>
+            <div class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">
+                <div class="text_nad_input">Imie i Nazwisko</div>
+                <div class="text_nad_input" id="Emial_yes">Email</div>
+            </div>
+            <div class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">
+                <input type="text" class="Imie_nazw" placeholder="Wpisz imie i nazwisko">
+                <input type="emil" class="email" placeholder="Wpisz email">
+            </div>
+            <label for="message" class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">Wiadomość:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      
+            <div class="wyślij" id="srodek"><div class="text_ponownie"onclick="closePopupMesage()">Wyślij</div></div>
+        </div>
+      </div>
+
+
+    <div class="overlayBell" id="overlayBell">
+        <div class="popupBell">
+            <img src="css/img/x-mark.png" alt="Close" class="close-btnBell" onclick="closePopupBell()">
+            <div class="Bell_Nagl"><div class="powiad">Powiadomienia</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💻Nowe logowanie Win11 Gabriela narutowicza 55B 13:56 12.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">🏧💸Wypłata gotówki 100zł Lublin 3 maja godzina 16:47 10.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💵➡️🏦Wpłata gotówki 50zł bankomat krakowskie przedmieście 18:20 8.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💵Przelew środków 50 zł do użytkownika Maksiu 12:20 7.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💵Wpłym środków od użytkownika Kuba M 19:45 5.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">🪙₿ Zakupiono 0.004 Bitcoin o wartości 662.97zł 21:23 4.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">📱Przelew środków 50 zł na telefon  932 *** 393 9.23 3.12.2023</div></div>
+            <div class="Powiadomienia"><div class="text_powiadomienia">💳Płatność kartą 4.99zł żabka Gabriela Narutowicza 12:33 1.12.2023 </div></div>
+            <div class="Powiadomienia" id="zaokr"><div class="text_powiadomienia">⚠️Niedostępność systemu bankowego niedziela 21.11.2023 od 2:00 do 4:00</div></div>
+        </div>
+    </div>
+
+    <div class="overlayNice" id="overlayNice">
+        <div class="popupNice">
+            <img src="css/img/x-mark.png" alt="Close" class="close-btnNice" onclick="closePopupNice()">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@starpar/video/7305031361650281760" data-video-id="7305031361650281760" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@starpar" href="https://www.tiktok.com/@starpar?refer=embed">@starpar</a> follow @JuliaTomaszewska_   <a title="capcut" target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a title="freddyfazbear" target="_blank" href="https://www.tiktok.com/tag/freddyfazbear?refer=embed">#freddyfazbear</a> <a title="sejm" target="_blank" href="https://www.tiktok.com/tag/sejm?refer=embed">#sejm</a> <a title="hołownia" target="_blank" href="https://www.tiktok.com/tag/ho%C5%82ownia?refer=embed">#hołownia</a> <a title="ai" target="_blank" href="https://www.tiktok.com/tag/ai?refer=embed">#ai</a> <a target="_blank" title="♬ dźwięk oryginalny - STARPAR®" href="https://www.tiktok.com/music/dźwięk-oryginalny-7305031382975187745?refer=embed">♬ dźwięk oryginalny - STARPAR®</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+      </div>
+ <script>
+        function openPopupNice() {
+    var overlay = document.getElementById('overlayNice');
+    overlay.style.display = 'flex';
+}
+
+    function closePopupNice() {
+    var overlay = document.getElementById('overlayNice');
+    overlay.style.display = 'none';
+}
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,651 @@
+/* <meta name="content" autor="Adam Pukaluk"> */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #241f1f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    
+  }
+  #background { 
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden; 
+    color: aliceblue;
+  }
+  
+  #background img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+  .overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.dash{
+  color: aliceblue;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.dash h2{
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.dash p {
+  margin-top: 0px;
+  font-weight: 400;
+}
+.line{
+  display: flex;
+  width:calc(100vh-0px);
+  align-self: center;
+  height: 0px;
+  border-top: 1px solid aliceblue;
+  margin-left:73px;
+  margin-right:73px;
+  
+}
+
+  header {
+    background-color: #e9e9ed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+  }
+  .link1{
+    text-decoration: none;
+    color: black;
+}
+#name{
+  margin-right: 20px;
+  align-self: center;
+  font-weight: 600;
+  
+}
+  #lines{
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #admin{
+    margin-right: 20px;
+    align-self: center;
+    font-weight: 600;
+  }
+  #search{
+    margin-right: 100px;
+    border: 0px;
+    height: 45px;
+    width: 300px;
+    margin-left: 40px;
+    align-self: center;
+    border-radius: 10px;
+  
+  }
+  #doc{
+    margin-right: 20px;
+    margin-left: 590px;
+    align-self: center;
+    color: #7d7494;
+    
+  }
+  #bell{
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  #mail{
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  #pfp1{
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    margin-top: 5px;
+   
+  }
+  
+
+  #pfp {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+  }
+  button{
+    border: 0px;
+  }
+.box_caly{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.user_acaunt{
+    width: 50%;
+    height: 440px;
+    background-color: #f8f8f9;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+#another_user{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.in_user_acount{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dddee0;
+    background-color: #f8f8f9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: blue;
+}
+.in_user_acount2{
+    width: 100%;
+    height: 53.2px;
+    border-bottom: 1px solid #dddee0;
+    background-color: #f8f8f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+
+.text_new{
+    font-size: 20px;
+    color: #69707a;
+    display: flex;
+    justify-content: center;
+    align-items: row;
+    margin-right: 20px; 
+    margin-left: 10px;
+}
+.red_button{
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: ease-in 0.1s;
+    margin-left: auto; 
+    margin-right: 30px;
+}
+.red_button:active{
+    scale: 1.1; 
+}
+
+#another{
+  margin-bottom: 100px;
+}
+
+
+.txt{
+    color: blue;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.type_transfer{
+    width: 350px;
+    height: 440px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.Wykonaj_przelew{
+    width: 350px;
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border-bottom: 1px solid #dddee0;
+    background-color: #f8f8f9;
+    color: blue;
+
+
+}
+
+.in_boxy{
+    height: 60px;
+	border-bottom: 1px solid #dddee0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: background-color 0.3s ease;
+    
+}
+.in_boxy2.clicked {
+      background-color: blue;
+      border:  1px solid blue ;
+      color: white;
+    }
+.in_boxy.clicked{
+    background-color: blue;
+    border:  1px solid blue ;
+    color: white;
+}
+.in_boxy2{
+    height: 75px;
+	border-bottom: 1px solid #dddee0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0 20px;
+    transition: background-color 0.3s ease;
+}
+#new{
+    height: auto;
+
+}
+.text {
+    font-size: 25px;
+}
+.text2 {
+    font-size: 20px;
+    color: #69707a;
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    margin-right: 20px; 
+    text-decoration: none; 
+}
+#change {
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+#change:active{
+    background-color: blue;
+}
+
+#showDivButton {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 50px 0 0 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#showDivButton:hover {
+  background-color: #2980b9;
+}
+
+#slidingDiv {
+  position: fixed;
+  top: 0;
+  left: -10px;
+  width: 1350px;
+  height: 95%;
+  background-color: #cacbcd;
+  color: white;
+  padding: 20px;
+  transition: left 0.5s ease;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+#closeDivButton {
+  background-color: #cacbcd;
+  cursor: pointer;
+}
+
+
+
+#text_mniejszy{
+  font-size: 15px;
+}
+
+.x_icon{
+  width: 35px;
+}
+
+.do_kogo input,
+.adres_odbiorcy input,
+.Rachunek_dbiorcy input{
+  width: 700px;
+	height: 40px;
+	margin: 0;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #afaeb8;
+	font-size: 15px;
+  margin-bottom: 25px;
+}
+.kwota input,
+.tytul input{
+  width: 250px;
+	height: 40px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #afaeb8;
+	font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.text_nad{
+  font-size: 20px;
+	margin-bottom: 5px;
+	color: #666;
+}
+.linia{
+  background-color: #666;
+  width: 700px;
+  height: 1px;
+  margin-bottom: 20px;
+
+}
+
+.kwota_tyt{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.dalej_platnosc{
+  width: 300px;
+  height: 70px;
+  background-color: #0061f2;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+  border: none; 
+  transition: all 0.1s ease-in;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.dalej_platnosc:active{
+  transform: scale(1.1); 
+  border: none; 
+  outline: none;
+}
+.text_konty{
+  font-size: 25px;
+  outline: none;
+}
+
+
+.jakis_div{
+	height: 45px;
+	width: 100%;
+	background: linear-gradient(to bottom ,grey,#ffffff);
+	text-align: center;
+	line-height: 40px; 
+	border-bottom: 2px solid grey;
+	display: inline-block; 
+    text-align: left; 
+
+	
+}
+.text_inny{
+	color: black;
+	font-size: 20px;
+	margin-left: 20px;
+}
+.selecty{
+  width: 80px;
+  margin-right: 100px;
+}
+
+.kantor{
+  width: 80%;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+
+.text_kantor{
+  width: 100%;
+  height: 70px;
+	border-bottom: 1px solid #dddee0;
+  color: #666;
+  background-color: #e9e9ea;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.podzial_w_kantorze{
+  width: 100%;
+  height: calc(100% - 70px);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;  
+  display: flex;
+  flex-direction: row;
+}
+.podzial_w_kantorze_prawo{
+  width: 50%;
+  height:100% ;
+  border-bottom-right-radius: 10px;
+  background-color: #f8f8f9;
+  border-left: 1px solid #dddee0;
+  display: flex;
+  flex-direction: row;
+}
+#margin_left_radius_canada{
+  border-bottom-left-radius: 10px;
+}
+.podzial_w_kantorze_lewo{
+  width: 50%;
+  height:100% ;
+  border-bottom-left-radius: 10px;
+  background-color: #f8f8f9;
+  display: flex;
+  flex-direction: row;
+}
+.podzial_w_kantorze_prawo_na_lewo{
+  width: 50%;
+  height: 100%;
+}
+.div_na_walut_kurs{
+  width: 100%;
+  height: 51.4px;
+  border: 1px solid #dddee0;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.kurs{
+  width:  100%;
+  height: 90%;
+  border-radius: 10px;
+  margin-top: 1%;
+  font-size: 30px;
+  margin-bottom: 4px;
+  color: #6c737d;
+}
+.koszty{
+  display: flex;
+  flex-direction: row;
+}
+.koszty_input{
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 20px;
+  width: 80px;
+}
+.text_koszty{
+  margin-left: 15px;
+  margin-top: 1px;
+  height: 100%;
+  width: 100px;
+}
+.waluta_kup{
+  width: 80px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 14px;
+  color: white;
+  cursor: pointer;
+  transition: ease-in 0.3ms;
+}
+.waluta_kup:active{
+  scale: 1.1;
+}
+.text_in_zakup{
+  margin-left: 12px;
+  margin-top: 2px;
+}
+
+
+
+
+
+.overlay1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.popup1 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 100px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.close-btn1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+ cursor: pointer;
+}
+.fajny_obrazek{
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: rgb(75, 0, 197);
+  cursor: pointer;
+}
+.text_in_braun{
+  color: white;
+  font-size: 20px;
+}
+
+
+.wielkość_flagi{
+  height: 70px;
+  width: 65px;
+}
+.logo_techni{
+  align-self: center;
+  height: 60px;
+  width: 60px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.mirror{
+  transform: scaleX(-1); 
+  backdrop-filter: blur(10px) grayscale(100%); 
+}
+.accept{
+  margin-top: 30px;
+}
+
+.overlayFredy {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.popupFredy {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.close-btnFredy {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+#srodek{
+  display: block;
+  align-self: center;
+ }

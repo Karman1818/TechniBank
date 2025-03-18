@@ -1,0 +1,370 @@
+/* <meta name="content" autor="Adam Pukaluk" poprawki Marceli Karman> */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #241f1f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  
+  #background {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden; 
+    color: aliceblue;
+  }
+  
+  #background img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+  .overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.dash{
+  color: aliceblue;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.dash h2{
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.dash p {
+  margin-top: 0px;
+  font-weight: 400;
+}
+.line{
+  display: flex;
+  width:calc(100vh-0px);
+  align-self: center;
+  height: 0px;
+  border-top: 1px solid aliceblue;
+  margin-left:73px;
+  margin-right:73px;
+  
+}
+  header {
+    background-color: #e9e9ed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+
+  }
+
+  #logo{
+    align-self: center;
+    height: 60px;
+    width: 60px;
+    margin-left: 15px;
+    margin-right: 10px;
+
+  }
+  #name{
+    margin-right: 20px;
+    align-self: center;
+    font-weight: 600;
+    
+  }
+  #search{
+    margin-right: 100px;
+    border: 0px;
+    height: 45px;
+    width: 300px;
+    margin-left: 40px;
+    align-self: center;
+    border-radius: 10px;
+  
+  }
+  #doc{
+    margin-right: 20px;
+    margin-left: 590px;
+    align-self: center;
+    color: #7d7494;
+    
+  }
+  #bell{
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  #mail{
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+
+  #pfp1{
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    margin-top: 5px;
+   
+  }
+  
+  
+  #pfp {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    border-radius: 50%;
+  }
+  button{
+    border: 0px;
+  }
+  .link1{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.text_inny{
+	color: black;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+  .profil_box {
+	position: relative; 
+	width: 350px;
+	height: 380px;
+	border-radius: 10px;
+	margin-left: 200px;
+	margin-top: 100px;
+	background-color: white;
+  }
+
+.change_seti{
+	width: 800px;	
+	height: 100px;
+	background-color:white;
+	border-radius: 10px;
+	margin-top: 100px;
+	margin-left: 50px;
+	margin-right: 200px;
+  margin-bottom: 50px;
+}
+
+.divy{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.in{
+	width: 350px;
+	height: 60px;
+	border-bottom: 1px solid #dddee0;
+	background-color: #f8f8f9;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+#mkpng{
+	width: 150px;
+	border-radius: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 25px;
+}
+.text_marceli {
+	position: absolute;
+	font-size: 25px;
+	color: #afaeb8;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-left: 10px;
+	margin-top: 10px; 
+  }
+
+
+  .text_cos {
+	color: #666; 
+	margin-left: 90px; 
+  align-self: center;
+  }
+  
+  .button-zmien {
+    width: 150px;
+    height: 40px;
+    background-color: #0061f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 90px;
+    color: white;
+    border: none; 
+    transition: all 0.1s ease-in;
+	outline: none;
+}
+
+.button-zmien:active {
+    transform: scale(1.1); 
+    border: none; 
+	outline: none;
+}
+  .change_seti {
+	width: 800px;
+	height: 600px;
+	background-color: white;
+	border-radius: 10px;
+	margin-top: 40px;
+	margin-left: 50px;
+	margin-right: 200px;
+	position: relative;
+}
+
+.zarzadzanie_ustawieniami {
+	width: 100%;
+	height: 60px;
+	background-color: #f8f8f9;
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 1px solid #dddee0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: #afaeb8;
+	font-size: 25px;
+}
+
+.fajny_obrazek{
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: rgb(75, 0, 197);
+  cursor: pointer;
+}
+.text_in_braun{
+  color: white;
+  font-size: 20px;
+}
+.zmien_nazwe_konta {
+	margin: 20px;
+}
+
+.tekst {
+	font-size: 15px;
+	margin-bottom: 5px;
+	color: #666;
+}
+.teskt_specjalny{
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-left: 30px;
+	color: #666;
+}
+input {
+	width: calc(100% - 40px);
+	height: 40px;
+	margin: 0 20px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #afaeb8;
+	font-size: 15px;
+}
+
+.imie, .nazwisko, .pesel, .location,.telefon, .urodziny {
+	width: 277px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 40px;
+}
+
+.img1{
+	width: 150px;
+	border-radius: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 25px;
+}
+.imie input, .nazwisko input, .pesel input, .location input,.telefon input,.urodziny input{
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #afaeb8;
+	font-size: 15px;
+}
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+#admin {
+    margin-right: 40px; 
+}
+.zmien{
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #0061f2;
+	color: white;
+	margin-left: 40px;
+	margin-top: 30px;
+	transition: ease-in 0.1s;
+  cursor: pointer;
+}
+.zmien:active{
+	outline: none;
+	scale: 1.1;
+
+}
+
+
+.overlayZony {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.popupZony {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.close-btnZony {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+#srodek{
+  display: block;
+  align-self: center;
+ }

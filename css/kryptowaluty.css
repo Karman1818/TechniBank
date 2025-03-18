@@ -1,0 +1,382 @@
+/* <meta name="content" autor="Adam Pukaluk"> */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #241f1f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    
+  }
+  
+  header {
+    background-color: #e9e9ed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0; 
+    z-index: 1000;
+  }
+  
+  #logo{
+    align-self: center;
+    height: 60px;
+    width: 60px;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  #name{
+    margin-right: 20px;
+    align-self: center;
+    font-weight: 600px;
+    
+  }
+  #search{
+    margin-right: 100px;
+    border: 0px;
+    height: 45px;
+    width: 300px;
+    margin-left: 40px;
+    align-self: center;
+    border-radius: 10px;
+  
+  }
+  #doc{
+    margin-right: 20px;
+    margin-left: 590px;
+    align-self: center;
+    color: #7d7494;
+    
+  }
+  #bell{
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  .overlayBell  {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-top: 30px;
+  }
+  #mail{
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  
+  #pfp1{
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    margin-top: 5px;
+   
+  }
+  
+  
+  #pfp {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    border-radius: 50%;
+  }
+  button{
+    border: 0px;
+  }
+  
+  #background {
+    width: 100%;
+    height: 38vh;
+    position: relative;
+    overflow: hidden; 
+    color: aliceblue;
+  }
+  
+  #background img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+  .overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-text p {
+    font-size: 17px;
+    color: #8497f0;
+  }
+  
+  
+  .dash{
+    color: aliceblue;
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+  .dash h2{
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .dash p {
+    margin-top: 0px;
+    font-weight: 400;
+  }
+  .line{
+    display: flex;
+    width:calc(100vh-0px);
+    align-self: center;
+    height: 0px;
+    border-top: 1px solid aliceblue;
+    margin-left:73px;
+    margin-right:73px;
+    
+  }
+  .pictures {
+    display: flex;
+    margin-top: 20px;
+    align-self: center;
+    margin-left: 56px;
+    margin-right: 53px;
+  
+    
+  }
+  
+  .button-pictures{
+  background-color: #241f1f;
+
+  }
+  
+  .text-pictures{
+  color: aliceblue;
+  margin-top: 10px;
+  }
+  
+  #pic1,
+  #pic2,
+  #pic3 {
+    height: 300px;
+    width: 457px; 
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+
+   
+  
+  #pic1:hover,
+  #pic2:hover,
+  #pic3:hover{
+    box-shadow: 0 10px 20px #bcc817; 
+    transform: translateY(-10px);
+  }
+  .cena_krypto:hover{
+    box-shadow: 0 10px 20px #ca1032; 
+    transform: translateY(-10px);
+  }
+  .link1{
+    text-decoration: none;
+    color: black;
+  }
+
+.Cena{
+    color: #e9e9ed;
+    font-size: 35px;
+}
+
+.zakup {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  width: 70%;
+  height: 250px; 
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 43px;
+  margin-left: 67px;
+
+}
+
+.logo_div{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+  }
+
+.logo{
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.input_zakup{
+    margin-top: 35px;
+    margin-left: 30px;
+    margin-right: 20px;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    
+
+}
+.cena_krypto_another{
+    font-size: 23px;
+    margin-top: 20px;
+    margin-left: 20px;
+    word-wrap: break-word;
+
+}
+.kupno{
+  width: 70%;
+  height: 50px;
+  border-radius: 40px;
+  background-color: #fc9312;
+  margin-left: 15%;
+  margin-right: 15%;
+  transition: ease-in 0.5ms;
+}
+
+.kupno:active{
+  scale: 1.1;
+}
+.text_in_kuno{
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+   
+}
+
+.fajny_obrazek{
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: rgb(75, 0, 197);
+  cursor: pointer;
+}
+.text_in_braun{
+  color: white;
+  font-size: 20px;
+}
+
+
+.overlay  {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.popup  {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 100px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#srodek{
+  display: block;
+  align-self: center;
+ }
+
+img{
+  width: 30px;
+}
+.overlayLos {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.popupLos {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.close-btnLos {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.container_waluty{
+  display: flex;
+  flex-direction: row;
+
+}
+#srodek {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+}

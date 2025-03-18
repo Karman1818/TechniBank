@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment|Cantor</title>
+    <meta name="content" autor="Adam Pukaluk"> 
+    <link rel="stylesheet" href="css/Platnosci.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="java/bell.js"></script>
+    <link rel="stylesheet" href="css/mail.css" />
+    <script src="java/mail.js"></script>
+    <link rel="stylesheet" href="css/bell.css">
+    <link rel="stylesheet" href="css/autorization.css"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Comic+Neue:wght@400;700&family=Noto+Sans+Linear+A&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="css/img/techni.png" alt="logo" class="logo_techni">
+        <div id="name"><a class="link1" href="index.html">TechniBank</a></div>
+        <input id="search" type="Search" placeholder="Wyszukaj" >
+        <div id="doc"><a class="link1" href="index.html">Strona Główna &rarr;</a></div>
+        <button id="bell" onclick="openPopupBell()">🔔</button>
+        <button id="mail" onclick="openPopupMesage()">✉️</button>
+        <button id="pfp1" onclick="window.location.href='profile.html'">
+            <img id="pfp" src="css/img/men.png" alt="profile picture">
+        </button>
+    </header>
+    <div id="background">
+      <img src="css/img/tlo.png" alt="tlo">
+      <div class="overlay-text">
+          <h1>Witamy w strefie Płatności</h1>
+          <a href="/css/img/fredy_f.mp4" download="fredy_f.mp4">
+            <button class="fajny_obrazek" onclick="openPopupFredy()"><div class="text_in_braun">Polecam klikać!!!</div></button>
+        </a>
+      </div>
+  </div>
+  <div class="dash">
+    <h2>Opcje</h2>
+    <p>Wybierz sposób płątności</p>
+
+</div>
+<div class="part1">
+<div class="line"></div>
+    <div class="box_caly">
+      <div class="user_acaunt">
+        <div class="in_user_acount">
+          <div class="txt"><b>Odbiorcy</b></div>
+        </div>
+        <div class="in_user_acount2">
+          <div class="text_new">Mama</div>
+          <div class="text_new">PL 06 8831 1012 5154 2563 2485 9920</div>
+          <button class="red_button">Delete</button>
+        </div>
+        <div class="in_user_acount2">
+          <div class="text_new">Tata</div>
+          <div class="text_new">PL 54 8693 0006 0025 5600 0575 7974</div>
+          <button class="red_button">Delete</button>
+        </div>
+        <div class="in_user_acount2">
+          <div class="text_new">Przemek</div>
+          <div class="text_new">PL 07 8812 1015 7939 3421 3228 0047</div>
+          <button class="red_button">Delete</button>
+        </div>
+        <div class="in_user_acount2">
+          <div class="text_new">Maksiu</div>
+          <div class="text_new">PL 96 8200 1034 9056 4137 8734 7650</div>
+          <button class="red_button">Delete</button>
+        </div>
+        <div class="in_user_acount2">
+          <div class="text_new">Kuba M</div>
+          <div class="text_new">PL 64 1020 2384 6499 3970 1845 9419</div>
+          <button class="red_button">Delete</button>
+        </div>
+        <div class="in_user_acount2">
+          <div class="text_new">Andrzej Duda</div>
+          <div class="text_new">PL 33 1240 4331 4166 5646 2666 2199</div>
+          <button class="red_button">Delete</button>
+        </div>
+        <div class="in_user_acount2" id="another_user">
+            <div class="text_new">Święty mikołaj</div>
+            <div class="text_new">PL 33 3445 7282 8364 9474 3847 3847</div>
+            <button class="red_button">Delete</button>
+          </div>
+      </div>
+
+      <div class="type_transfer">
+        <div class="Wykonaj_przelew">
+          <div class="text" ><b>Wykonaj przelew</b></div>
+        </div>
+        <div class="in_boxy" id="change">
+          <a class="text2" >⇆ Przelew krajowy</a>
+        </div>
+        <div class="in_boxy" id="change">
+          <a class="text2">👤 Na własne konto</a>
+        </div>
+        <div class="in_boxy" id="change">
+          <a class="text2">📱 Doładowanie telefonu</a>
+        </div>
+        <div class="in_boxy" id="change">
+          <a class="text2">🏛️ Do urzędu</a>
+        </div>
+        <div class="in_boxy" id="change">
+          <a class="text2">🌎 Walutowy/zagraniczny</a>
+        </div>
+        <div class="in_boxy2" id="change">
+          <a class="text2">➕ Nowa płatność cykliczna</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="slidingDiv">
+      <button id="closeDivButton"><img src="css/img/x-mark.png" class="x_icon"></button>  
+      <div class="do_kogo">
+        <div class="text_nad">Odbiorca</div>
+        <input type="text"placeholder="Nazwa użytkownika">
+      </div>
+      <div class="adres_odbiorcy">
+        <div class="text_nad">Adres odbiorcy(opcjonalne)<div id="text_mniejszy">nie wypełniać podczas przelewu własnego</div></div>
+        <input type="text" placeholder="Wpisz adres odbiorcy">
+      </div>
+      <div class="Rachunek_dbiorcy">
+        <div class="text_nad">Na Rachunek</div>
+        <input type="text" placeholder="Wpisz rachunek odbiorcy/lub nazwe swojej skarbonki">
+      </div>
+      <div class="linia"></div>
+      <div class="kwota_tyt">
+        <div class="kwota">
+          <div class="text_nad">Kwota</div>
+          <input class="kwota" placeholder="Wpisz kwote">
+          <select class="selecty">
+            <option>Zł</option>
+            <option>Euro</option>
+            <option>Dolarów</option>
+            <option>Rubli</option>
+            <option>Franków</option>
+          </select>
+        </div>
+        <div class="tytul">
+          <div class="text_nad">Tytuł</div>
+          <input class="tytul" placeholder="Wpisz tytul przelewu">
+        </div>
+      </div>
+      <div class="linia"></div>
+      <div onclick="openPopupAutor()" class="dalej_platnosc">
+        <div class="text_konty">Dalej</div>
+      </div>
+    </div>
+
+    <div class="dash">
+      <h2>Kantor</h2>
+      <p>Rozmień waluty</p>
+  
+  </div>
+  <div class="part1">
+  <div class="line" id="another"></div>
+  
+
+
+<div class="kantor">
+  <div class="text_kantor"><div class="txt"><b>Witaj w kantorze</b></div></div>
+  <div class="podzial_w_kantorze">
+    <div class="podzial_w_kantorze_lewo">
+      <div class="podzial_w_kantorze_prawo_na_lewo">
+        <div class="div_na_walut_kurs">
+          <div class="Flags"><img src="/css/img/FLags/united-states.png"class="wielkość_flagi" ></div>
+          <div class="kurs">1 USD-3,96 zł</div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="Flags"><img src="/css/img/FLags/european-union.png" class="wielkość_flagi"></div>
+          <div class="kurs">1 Euro-4,32 zł</div>
+        </div>
+        <div class="div_na_walut_kurs">
+
+          <div class="Flags"><img src="/css/img/FLags/united-kingdom.png" class="wielkość_flagi" ></div>
+          <div class="kurs">1 Funt-5,02 zł </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="Flags"><img src="/css/img/FLags/switzerland.png" class="wielkość_flagi"></div>
+          <div class="kurs">1 Frnk Szw-4,57 zł </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="Flags"><img src="/css/img/FLags/russia.png" class="wielkość_flagi"></div>
+          <div class="kurs">1 Rubl Ros-0,04 zł </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="Flags"><img src="/css/img/FLags/china.png" class="wielkość_flagi"></div>
+          <div class="kurs">1 Juan-0,56 zł </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="Flags"><img src="/css/img/FLags/india.png" class="wielkość_flagi"></div>
+          <div class="kurs">1 Rup Ind-0,048 zł </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="Flags"><img src="/css/img/FLags/israel.png" class="wielkość_flagi"></div>
+          <div class="kurs">1 Izr szekl-1,08 zł </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="Flags"><img src="/css/img/FLags/norway.png" class="wielkość_flagi"></div>
+          <div class="kurs">1 Kor nor-0,38 zł </div>
+        </div>
+        <div class="div_na_walut_kurs" id="margin_left_radius_canada">
+          <div class="Flags"><img src="/css/img/FLags/canada.png" class="wielkość_flagi"></div>
+          <div class="kurs">1 Dol Kan-2,95 zł </div>
+        </div>
+      </div>
+
+      <div class="podzial_w_kantorze_prawo_na_lewo">
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValue" oninput="updateValue()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValue">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div>
+          </div>
+      
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValueEuro" oninput="updateValueEuro()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValueEuro">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div>
+          </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValueFunt" oninput="updateValueFunt()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValueFunt">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div>
+          </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValueFrnkSzw" oninput="updateValueFrnkSzw()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValueFrnkSzw">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div>
+          </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValueRublRos" oninput="updateValueRublRos()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValueRublRos">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div>
+          </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValueJuan" oninput="updateValueJuan()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValueJuan">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div>
+          </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValueRupInd" oninput="updateValueRupInd()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValueRupInd">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div>
+          </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValueIzrszekl" oninput="updateValueIzrszekl()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValueIzrszekl">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div>
+          </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValueKornor" oninput="updateValueKornor()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValueKornor">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div>
+          </div>
+        </div>
+        <div class="div_na_walut_kurs">
+          <div class="koszty">
+            <input class="koszty_input" type="number" id="inputValueDolKan" oninput="updateValueDolKan()" >
+            <div class="text_koszty">Otrzymasz: <span class="zero" id="dynamicValueDolKan">0 </span>zł</div>
+            <div class="waluta_kup" onclick="openPopup()"><div class="text_in_zakup">Wymien</div></div >
+          </div>
+        </div>
+        
+      </div>
+
+
+
+
+
+
+    </div>
+    <div>
+      <div class="podzial_w_kantorze_lewo"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="overlay1" id="overlay1">
+  <div class="popup1">
+      <img src="/css/img/x-mark.png" alt="Close" class="close-btn1" onclick="closePopup()">
+      <h2 class="accept">Pomyślnie wymieniono walute</h2>
+  </div>
+</div>
+
+<div class="overlayAutor" id="overlayAutor">
+      <img id="img_autor" alt="Close" class="close-btnAutor" >
+      <div class="container_main">
+        <div class="gorny_div_in_main">Autorization</div>
+        <div class="text_in_main">Na twoją aplikacje w telefonie przyszła 
+            prośba o autoryzacje przelewu, aby kontynuować potwierdź autoryzacje
+        </div>         
+        <button class="next" onclick="closePopupAutor()"><a onclick="closePopupAutor()" class="text_kont">Kontynułuj</a></button>
+    </div>
+</div>
+
+
+
+<div class="overlayMasge " id="overlayMasge ">
+  <div class="popupMasge ">
+      <img src="css/img/x-mark.png" alt="Close" class="close-btnMasge " onclick="closePopupMesage()">
+      <h2>Napisz do nas!!!</h2>
+      <div class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">
+          <div class="text_nad_input">Imie i Nazwisko</div>
+          <div class="text_nad_input" id="Emial_yes">Email</div>
+      </div>
+      <div class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">
+          <input type="text" class="Imie_nazw" placeholder="Wpisz imie i nazwisko">
+          <input type="emil" class="email" placeholder="Wpisz email">
+      </div>
+      <label for="message" class="nie_chce_mi_się_wymyśliać_nazwy_do_tego">Wiadomość:</label>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+      <div class="wyślij" id="srodek"><div class="text_ponownie"onclick="closePopupMesage()">Wyślij</div></div>
+  </div>
+</div>
+
+
+<div class="overlayBell" id="overlayBell">
+  <div class="popupBell">
+      <img src="css/img/x-mark.png" alt="Close" class="close-btnBell" onclick="closePopupBell()">
+      <div class="Bell_Nagl"><div class="powiad">Powiadomienia</div></div>
+      <div class="Powiadomienia"><div class="text_powiadomienia">💻Nowe logowanie Win11 Gabriela narutowicza 55B 13:56 12.12.2023</div></div>
+      <div class="Powiadomienia"><div class="text_powiadomienia">🏧💸Wypłata gotówki 100zł Lublin 3 maja godzina 16:47 10.12.2023</div></div>
+      <div class="Powiadomienia"><div class="text_powiadomienia">💵➡️🏦Wpłata gotówki 50zł bankomat krakowskie przedmieście 18:20 8.12.2023</div></div>
+      <div class="Powiadomienia"><div class="text_powiadomienia">💵Przelew środków 50 zł do użytkownika Maksiu 12:20 7.12.2023</div></div>
+      <div class="Powiadomienia"><div class="text_powiadomienia">💵Wpłym środków od użytkownika Kuba M 19:45 5.12.2023</div></div>
+      <div class="Powiadomienia"><div class="text_powiadomienia">🪙₿ Zakupiono 0.004 Bitcoin o wartości 662.97zł 21:23 4.12.2023</div></div>
+      <div class="Powiadomienia"><div class="text_powiadomienia">📱Przelew środków 50 zł na telefon  932 *** 393 9.23 3.12.2023</div></div>
+      <div class="Powiadomienia"><div class="text_powiadomienia">💳Płatność kartą 4.99zł żabka Gabriela Narutowicza 12:33 1.12.2023 </div></div>
+      <div class="Powiadomienia" id="zaokr"><div class="text_powiadomienia">⚠️Niedostępność systemu bankowego niedziela 21.11.2023 od 2:00 do 4:00</div></div>
+  </div>
+</div>
+    
+
+<div class="overlayFredy" id="overlayFredy">
+  <div class="popupFredy">
+      <img src="css/img/x-mark.png" alt="Close" class="close-btnFredy" onclick="closePopupFredy()">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sorbeeet/video/7299750919913114888" data-video-id="7299750919913114888" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@sorbeeet" href="https://www.tiktok.com/@sorbeeet?refer=embed">@sorbeeet</a> <a title="freddy" target="_blank" href="https://www.tiktok.com/tag/freddy?refer=embed">#freddy</a> <a title="freddyfazbear" target="_blank" href="https://www.tiktok.com/tag/freddyfazbear?refer=embed">#freddyfazbear</a> <a target="_blank" title="♬ caramellafazbear - сорбет" href="https://www.tiktok.com/music/caramellafazbear-7299750957078809345?refer=embed">♬ caramellafazbear - сорбет</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+  </div>
+</div>
+    <script>
+
+function openPopup() {
+    var overlay = document.getElementById('overlay1');
+    overlay.style.display = 'flex';
+}
+
+    function closePopup() {
+    var overlay = document.getElementById('overlay1');
+    overlay.style.display = 'none';
+}
+
+
+
+
+const changeButtons = document.querySelectorAll('.in_boxy');
+
+const slidingDiv = document.getElementById('slidingDiv');
+const closeDivButton = document.getElementById('closeDivButton');
+
+changeButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    slidingDiv.style.left = '0';
+    console.log(`Clicked button ${index + 1}`);
+  });
+});
+
+closeDivButton.addEventListener('click', function() {
+  slidingDiv.style.left = '-1400px';
+});
+
+
+
+function updateValue() {
+      var inputValue = document.getElementById("inputValue").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 3.96 ;
+        document.getElementById("dynamicValue").textContent = result;
+      } else {
+        document.getElementById("dynamicValue").textContent = "Wprowadź liczbę";
+      }
+    }
+function updateValueEuro() {
+      var inputValue = document.getElementById("inputValueEuro").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 4.32 ;
+        document.getElementById("dynamicValueEuro").textContent = result;
+      } else {
+        document.getElementById("dynamicValueEuro").textContent = "Wprowadź liczbę";
+      }
+    }
+
+    function updateValueFunt() {
+      var inputValue = document.getElementById("inputValueFunt").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 5.02 ;
+        document.getElementById("dynamicValueFunt").textContent = result;
+      } else {
+        document.getElementById("dynamicValueFunt").textContent = "Wprowadź liczbę";
+      }
+    }
+    function updateValueFrnkSzw() {
+      var inputValue = document.getElementById("inputValueFrnkSzw").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 4.57 ;
+        document.getElementById("dynamicValueFrnkSzw").textContent = result;
+      } else {
+        document.getElementById("dynamicValueFrnkSzw").textContent = "Wprowadź liczbę";
+      }
+    }
+    function updateValueRublRos() {
+      var inputValue = document.getElementById("inputValueRublRos").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 0.04 ;
+        document.getElementById("dynamicValueRublRos").textContent = result;
+      } else {
+        document.getElementById("dynamicValueRublRos").textContent = "Wprowadź liczbę";
+      }
+    }
+    function updateValueJuan() {
+      var inputValue = document.getElementById("inputValueJuan").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 0.56 ;
+        document.getElementById("dynamicValueJuan").textContent = result;
+      } else {
+        document.getElementById("dynamicValueJuan").textContent = "Wprowadź liczbę";
+      }
+    }
+    function updateValueRupInd() {
+      var inputValue = document.getElementById("inputValueRupInd").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 0.048 ;
+        document.getElementById("dynamicValueRupInd").textContent = result;
+      } else {
+        document.getElementById("dynamicValueRupInd").textContent = "Wprowadź liczbę";
+      }
+    }
+    function updateValueIzrszekl() {
+      var inputValue = document.getElementById("inputValueIzrszekl").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 1.08 ;
+        document.getElementById("dynamicValueIzrszekl").textContent = result;
+      } else {
+        document.getElementById("dynamicValueIzrszekl").textContent = "Wprowadź liczbę";
+      }
+    }
+    function updateValueKornor() {
+      var inputValue = document.getElementById("inputValueKornor").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 0.38 ;
+        document.getElementById("dynamicValueKornor").textContent = result;
+      } else {
+        document.getElementById("dynamicValueKornor").textContent = "Wprowadź liczbę";
+      }
+    }
+    function updateValueDolKan() {
+      var inputValue = document.getElementById("inputValueDolKan").value;
+      if (!isNaN(inputValue)) {
+        var result = inputValue * 2.95 ;
+        document.getElementById("dynamicValueDolKan").textContent = result;
+      } else {
+        document.getElementById("dynamicValueDolKan").textContent = "Wprowadź liczbę";
+      }
+    }
+
+    function openPopupMesage() {
+    var overlay = document.getElementById('overlayMasge ');
+    overlay.style.display = 'flex';
+}
+
+    function closePopupMesage() {
+    var overlay = document.getElementById('overlayMasge ');
+    overlay.style.display = 'none';
+}
+function openPopupAutor() {
+    var overlay = document.getElementById('overlayAutor');
+    overlay.style.display = 'flex';
+}
+
+    function closePopupAutor() {
+    var overlay = document.getElementById('overlayAutor');
+    overlay.style.display = 'none';
+}
+
+
+
+        function openPopupFredy() {
+    var overlay = document.getElementById('overlayFredy');
+    overlay.style.display = 'flex';
+}
+
+    function closePopupFredy() {
+    var overlay = document.getElementById('overlayFredy');
+    overlay.style.display = 'none';
+}
+
+ 
+      </script>
+  </body>
+</html>
